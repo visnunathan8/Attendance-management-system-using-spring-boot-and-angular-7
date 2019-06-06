@@ -1,0 +1,81 @@
+<app-headeremp></app-headeremp>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #customers {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #customers td, #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customers tr:hover {background-color: #ddd;}
+    
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4CAF50;
+      color: white;
+    }
+    </style>
+</head>
+<body>
+
+<p style="text-shadow: 2px 2px 5px red;margin-left:35%;padding-top:30px;color:indigo;font-size: 60px;font-weight: bolder;" >Employee Details</p><br><br>
+<div >
+    <!--<span style="float: left; padding-left:100px; ">{{title}}</span>
+    -->
+    <table style="float: left;
+    margin: 0 1.5%;
+    width: 63%; " id="customers">
+        <tr >
+          <th>Details</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Employee ID </td>
+          <td>{{employee.employeeId}}</td>
+        </tr>
+        <tr>
+          <td>Employee Name</td>
+          <td>{{employee.firstName}} {{employee.lastName}}</td>
+        </tr>
+        <tr>
+          <td>Department</td>
+          <td>{{employee.department}}</td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td>{{employee.gender}}</td>
+        </tr>
+        <tr>
+            <td>Blood group</td>
+            <td>{{employee.bloodGroup}}</td>
+          </tr>
+          <tr>
+              <td>Date Of Birth</td>
+              <td>{{employee.dob}}</td>
+            </tr>
+            <tr>
+              <td>Shift</td>
+              <td>{{employee.shift}}</td>
+            </tr>
+      </table>
+      <img style="float: right;
+      margin: -4% 2%;
+      margin-right: 190px;
+      width: 20%;" src="https://webzagsolutions.com/renting_mantra/img/businessman.png">
+
+    </div>
+   
+      </body>
+      </html>
+      

@@ -1,0 +1,134 @@
+<app-adminheader></app-adminheader>
+
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div.rt {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+#customers {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #customers td, #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customers tr:hover {background-color: #ddd;}
+    
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4CAF50;
+      color: white;
+    }
+</style>
+<body><br><br>
+<h3 style="text-shadow: 2px 2px 5px red;font-size:60px;font-weight: bolder;color: blue;margin-left: 600px;">EMPLOYEE DETAILS</h3>
+<br><br>
+<div class="rt" style="margin-left:500px;width: 800px;">
+
+  <label for="lname">Department</label>
+   
+                
+  
+  <select (click)=calle() id="lname" [(ngModel)]="department" name="department">
+      <option *ngFor="let d of depart" [value]="d.departmentId">{{d.departmentId}}</option>     
+    </select>
+    <br><br>
+
+    <label for="lname">EMPLOYEE NAME :</label>
+    <select  id="lname" [(ngModel)]="emp" name="emp" required>
+        <option *ngFor="let e of employeename" [value]="e.employeeId">{{e.employeeId}}</option>     
+      </select>
+      <br><br>
+      <label for="lname">SHIFT :</label>
+      <select id="lname" [(ngModel)]="shift" name="shift">
+        <option selected value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    <input (click)=submit() type="submit" value="Submit">
+  
+</div>
+<div *ngIf="show">
+<p style="margin-left:35%;padding-top:30px;color:indigo;font-size: 60px;font-weight: bolder;" >Employee Details</p>
+<div >
+    <!--<span style="float: left; padding-left:100px; ">{{title}}</span>
+    -->
+    <table style="float: left;
+    margin: 0 2.0%;
+    width: 63%; " id="customers">
+        <tr >
+          <th>Details</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Employee ID </td>
+          <td>{{employee.employeeId}}</td>
+        </tr>
+        <tr>
+          <td>Employee Name</td>
+          <td>{{employee.firstName}} {{employee.lastName}}</td>
+        </tr>
+        <tr>
+          <td>Department</td>
+          <td>{{employee.department}}</td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td>{{employee.gender}}</td>
+        </tr>
+        <tr>
+            <td>Blood group</td>
+            <td>{{employee.bloodGroup}}</td>
+          </tr>
+          <tr>
+              <td>Date Of Birth</td>
+              <td>{{employee.dob}}</td>
+            </tr>
+      </table>
+      <img style="float: right;
+      margin: -4% 2%;
+      margin-top:30px;
+      margin-right: 190px;
+      width: 20%;" src="https://webzagsolutions.com/renting_mantra/img/businessman.png">
+
+    </div><br><br>
+   </div>
+      </body>
+      </html>
+      

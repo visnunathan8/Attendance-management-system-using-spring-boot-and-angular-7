@@ -1,0 +1,129 @@
+<app-headerdept></app-headerdept>
+
+<!DOCTYPE html>
+<html>
+<style>
+    #customers {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #customers td, #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customers tr:hover {background-color: #ddd;}
+    
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4CAF50;
+      color: white;
+    }
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+<br><br><br>
+<h3 style="text-shadow: 2px 2px 5px red;font-size:60px;font-weight: bolder;color: blue;margin-left: 500px;">DEPARTMENT ATTENDANCE</h3>
+<br><br>
+<div style="margin-left:500px;width: 800px;">
+    
+
+    <label for="lname">Month</label>
+   
+    <select id="lname" [(ngModel)]="month" name="month">
+        <option selected value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+      <br><br>
+      <label for="lname">Year</label>
+      <!--<input [(ngModel)]="year" style="margin-left:30px;height: 50px;width: 200px;" id="lname" type="text" name="year">
+      --><select id="lname" [(ngModel)]="year" name="year">
+          <option selected value="1">2017</option>
+          <option value="2">2018</option>
+          <option value="3">2019</option>
+        </select>
+        <label for="lname">Shift</label>
+        <select id="lname" [(ngModel)]="shift" name="shift">
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      <br><br>
+    
+    
+    <input (click)=submit() type="submit" value="Submit">
+  
+</div>
+<span *ngIf="showActions">
+<br><br><br><br>
+<p style="text-shadow: 2px 2px 5px red;padding-left:300px;font-size: 30px;font-weight: bolder;color:crimson;">TOTAL NUMBER OF DAYS : {{count}}</p>
+<br><br><br><br>
+ <table style="margin-left: 300px;
+    
+    width: 63%; " id="customers">
+            <thead>
+            <th>EmployeeID</th>
+            <th>No Of Days present</th>
+            <th>No Of Days Absent</th>
+            </thead>
+            <tbody>
+              
+            <tr *ngFor="let a of at">
+            <td >{{a[0]}}</td>
+            <td>{{a[1]}}</td>
+            <td >{{count-a[1]}}</td>
+            
+            </tr>
+            </tbody>
+            </table>
+            <br><br><br><br>
+            <br><br><br><br>
+            <br><br><br><br>
+        </span>
+</body>
+</html>
