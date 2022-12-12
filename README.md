@@ -1,6 +1,6 @@
 # Attendance-management-system
 
-The main motive of the project is to create an end to end attendance management system for the company,following are the key features of this project :-
+## The main motive of the project is to create an end to end attendance management system for the company,following are the key features of this project :-
 1. Dedicated views for EMPLOYEES,ADMIN,DEPARTMENT as well
 2. EMPLOYEE VIEW :-
   * ATTENDANCE ANALYSIS 
@@ -19,7 +19,7 @@ The main motive of the project is to create an end to end attendance management 
   
   -------------------------------------------------------------------------------
   
-  TECHNOLOGIES USED,
+#  TECHNOLOGIES USED,
   
   FRONT END :- Angular7
   BACK END :- Spring Boot (using CRUD REPOSITORIES ) 
@@ -28,7 +28,7 @@ The main motive of the project is to create an end to end attendance management 
   
   -------------------------------------------------------------------------------
   
-  SYSTEM REQUIREMENTS,
+#  SYSTEM REQUIREMENTS,
   Java 8,MySQL (suitable version),Node JS,eclipse ide, Maven tool
   
   
@@ -36,14 +36,14 @@ The main motive of the project is to create an end to end attendance management 
   
   How to run the application 
   
-  FRONT END :-
+#  FRONT END :-
     Install npm 
     Go inside the folder named 'Attendance System' in terminal and type the following command
                             'npm install'  
     give 'npm start'
     
     
- BACK END :- 
+# BACK END :- 
     Right click on the project -> Select 'maven' -> Select 'Update Project'
     Right click on the POM.XML -> Select 'run as' -> Select 'Maven Build'
     Under the target folder -> Find the path of the snapshot.jar file 
@@ -51,3 +51,7 @@ The main motive of the project is to create an end to end attendance management 
         java -jar 'path of the jar'
       For eg : java -jar /home/test/Downloads/attendance/target/attendance-0.0.1-SNAPSHOT.jar
     
+# LOGIN PAGE   
+<img width="1792" alt="Screenshot 2022-12-11 at 10 10 38 PM" src="https://user-images.githubusercontent.com/30067377/206952645-3f55c23f-ac05-4642-aa4a-23bebba0e25d.png">
+
+
