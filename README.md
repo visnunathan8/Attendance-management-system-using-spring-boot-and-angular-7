@@ -60,12 +60,12 @@
 ## 3. admin -> to access admin view.
 
 ## Always use postman to create the account as the passwords are encrypted.
-### Request : http://localhost:8081/userAccount/adduseraccount/
-### Response : {
-###    "type": "3",
-###    "password": "$2a$10$HO8J7fP1Mn7jn7hmqTog0OhJn/acvqlQ7yP12LavPVFlKBmRH2BTG",
-###    "employeeId": "admin"
-### }
+#### Request : http://localhost:8081/userAccount/adduseraccount/
+#### Response : {
+####    "type": "3",
+####    "password": "$2a$10$HO8J7fP1Mn7jn7hmqTog0OhJn/acvqlQ7yP12LavPVFlKBmRH2BTG",
+####    "employeeId": "admin"
+#### }
 
 <img width="874" alt="Screenshot 2022-12-11 at 10 30 12 PM" src="https://user-images.githubusercontent.com/30067377/206954611-52fa2df9-3c48-4e83-8d84-c5081ec608cb.png">
 
