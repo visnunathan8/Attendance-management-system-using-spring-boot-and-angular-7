@@ -1,18 +1,18 @@
 # Attendance-management-system
 
 ## The main motive of the project is to create an end to end attendance management system for the company,following are the key features of this project :-
-1. Dedicated views for EMPLOYEES,ADMIN,DEPARTMENT as well
-2. EMPLOYEE VIEW :-
+### 1. Dedicated views for EMPLOYEES,ADMIN,DEPARTMENT as well
+### 2. EMPLOYEE VIEW :-
   * ATTENDANCE ANALYSIS 
   * EMPLOYEE DETAILS
   * LEAVE REQUEST SUBMISSION (will be approved by the admin.!)
   * NOTIFICATION CENTER (to view the status of the leave requested)
   * HOLIDAY LIST (company specific holidays)
-3. DEPARTMENT VIEW :-
+### 3. DEPARTMENT VIEW :-
   * ENTIRE DETAILS OF THE EMPLOYEES IN THAT PARTICULAR DEPARTMENT ALONG WITH THEIR ATTENDANCE WILL BE DISPLAYED IN THE DESCENDING ORDER(in terms of no of days present)
   * LEAVE APPROVAL FACILTY 
   * HOLIDAY LIST (company specific holidays)
-4. ADMIN VIEW
+### 4. ADMIN VIEW
   * ENTIRE DETAILS OF THE EMPLOYEES ALONG WITH THEIR ATTENDANCE WILL BE DISPLAYED DEPARTMENT WISE IN THE DESCENDING ORDER(in terms of no of days present)
   * HOLIDAY LIST (company specific holidays)
   
